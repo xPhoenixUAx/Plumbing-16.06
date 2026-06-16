@@ -4,10 +4,10 @@
     {
       slug: "drain-cleaning",
       title: "Drain Cleaning",
-      eyebrow: "Flow Restoration",
-      short: "Clear clogged, slow, or noisy drains with professional inspection and cleaning support.",
+      eyebrow: "When drains slow down",
+      short: "For sinks, tubs, floor drains, and lines that are slowing down, backing up, or starting to smell.",
       intro:
-        "Drain cleaning helps restore water flow, remove buildup, and reduce the chance of repeat clogs in kitchens, bathrooms, laundry rooms, basements, and commercial spaces.",
+        "Drain problems usually start small: a sink empties slowly, a shower gurgles, or a floor drain smells wrong. This request path is for clearing the line and figuring out whether it is a one-time clog or a repeat problem.",
       image: "../img/generated/drain-cleaning.webp",
       cardImage: "img/generated/drain-cleaning.webp",
       included: [
@@ -25,7 +25,7 @@
         "Test drainage and explain prevention steps"
       ],
       details:
-        "A drain issue can point to a simple clog or a deeper line problem. Customers should avoid harsh chemical overuse and request a provider evaluation when clogs return quickly.",
+        "If the same drain clogs again soon after clearing, the line may need a closer look. Mention any repeated backups, old pipes, basement drains, or multiple affected fixtures in the request.",
       faqs: [
         ["Can emergency drain cleaning be requested?", "Yes. Urgent backups and blocked drains can be routed for emergency provider contact."],
         ["Will every clog need hydro jetting?", "No. Many clogs can be cleared with simpler tools. Hydro jetting is usually considered for heavy buildup or recurring issues."],
@@ -36,10 +36,10 @@
     {
       slug: "leak-detection",
       title: "Leak Detection",
-      eyebrow: "Hidden Water Issues",
-      short: "Find hidden leaks before they cause expensive water damage or mold concerns.",
+      eyebrow: "When water shows up where it should not",
+      short: "For damp spots, mystery water bills, low pressure, running-water sounds, or leaks you cannot see.",
       intro:
-        "Leak detection focuses on identifying the source of suspicious moisture, pressure drops, staining, sounds, or unexplained water bills.",
+        "Leak detection is for the situations where something feels off but the source is not obvious. A stain, soft floor, meter movement, or pressure change can all be useful clues.",
       image: "../img/generated/leak-detection.webp",
       cardImage: "img/generated/leak-detection.webp",
       included: [
@@ -57,7 +57,7 @@
         "Recommend repair scope and next steps"
       ],
       details:
-        "Fast leak investigation can reduce damage. If water is active near electrical systems, customers should treat the situation as urgent and follow provider safety guidance.",
+        "Small leaks can travel before they show up. Include where the stain or sound appears, when it started, and whether water use or weather changes make it worse.",
       faqs: [
         ["Can leaks be found without opening walls?", "Often, non-invasive checks can narrow the source before any opening is considered."],
         ["What if the leak is underground?", "Providers may recommend specialized detection or excavation only after diagnostics indicate the likely source."],
@@ -68,10 +68,10 @@
     {
       slug: "water-heater-service",
       title: "Water Heater Service",
-      eyebrow: "Hot Water Support",
-      short: "Repair, maintenance, and replacement support for tank and tankless water heaters.",
+      eyebrow: "When hot water gets unreliable",
+      short: "For no hot water, rusty water, noisy heaters, leaking tanks, or replacement questions.",
       intro:
-        "Water heater service helps restore reliable hot water, improve efficiency, and determine whether repair or replacement is the better path.",
+        "Water heater issues can be simple maintenance, a failed part, or a tank near the end of its life. This page helps frame the request before a provider evaluates repair versus replacement.",
       image: "../img/generated/water-heater.webp",
       cardImage: "img/generated/water-heater.webp",
       included: [
@@ -89,7 +89,7 @@
         "Coordinate installation or service scheduling"
       ],
       details:
-        "Water heater work may involve gas, electric, venting, and permit requirements. Customers should verify provider credentials for their system type.",
+        "Water heater work can involve gas, electric, venting, drainage, code, and permit questions. Add the heater age, tank size, fuel type, and whether water is actively leaking.",
       faqs: [
         ["Can a leaking water heater be repaired?", "Some leaks involve fittings or valves, but tank leaks often require replacement."],
         ["How long does replacement take?", "Many standard replacements can be completed in a day, depending on access, parts, code needs, and provider availability."],
@@ -100,10 +100,10 @@
     {
       slug: "emergency-plumbing",
       title: "Emergency Plumbing",
-      eyebrow: "Urgent Response",
-      short: "Get connected for burst pipes, major leaks, backups, and urgent plumbing failures.",
+      eyebrow: "When it cannot wait",
+      short: "For burst pipes, bad backups, overflowing fixtures, or plumbing problems that cannot wait.",
       intro:
-        "Emergency plumbing support is designed for situations where fast action can reduce property damage, safety risks, or serious disruption.",
+        "Emergency plumbing is for active water damage, sewer backup, failed shutoffs, and fixtures that are making the property hard to use. If it is safe, shut off the water before sending the request.",
       image: "../img/generated/emergency-plumbing.webp",
       cardImage: "img/generated/emergency-plumbing.webp",
       included: [
@@ -121,7 +121,7 @@
         "Plan permanent repair after stabilization"
       ],
       details:
-        "Emergency work may carry different pricing and availability. Customers should ask for scope, fees, and provider credentials before approving work.",
+        "Emergency availability and pricing can differ from scheduled work. Ask the responding provider what the visit includes, what temporary stabilization costs, and what follow-up repair may be needed.",
       faqs: [
         ["Is emergency help available at night?", "Emergency requests can be submitted 24/7 and routed based on local provider availability."],
         ["What should I do before help arrives?", "If safe, shut off the water source and avoid affected electrical areas."],
@@ -132,10 +132,10 @@
     {
       slug: "pipe-repair",
       title: "Pipe Repair & Replacement",
-      eyebrow: "Durable Plumbing Lines",
-      short: "Repair damaged pipes or coordinate replacement for aging, leaking, or corroded lines.",
+      eyebrow: "When pipes need more than a quick patch",
+      short: "For damaged pipe sections, aging lines, pressure issues, corrosion, or planned replacement.",
       intro:
-        "Pipe repair and replacement services address leaks, corrosion, pressure problems, damaged sections, and outdated plumbing lines.",
+        "Pipe work can be a small exposed repair or a larger replacement plan. The right request depends on pipe material, access, age, and how often problems are happening.",
       image: "../img/generated/pipe-repair.webp",
       cardImage: "img/generated/pipe-repair.webp",
       included: [
@@ -153,7 +153,7 @@
         "Test repaired lines and review maintenance guidance"
       ],
       details:
-        "Pipe work can involve walls, floors, crawlspaces, or underground lines. Providers should explain access needs and restoration limits before work begins.",
+        "Pipes often hide behind walls, cabinets, crawlspaces, or slabs. Ask how much access is needed, what restoration is included, and whether a temporary repair makes sense.",
       faqs: [
         ["Can only one pipe section be replaced?", "Often, yes. Larger replacement is usually considered when damage is widespread."],
         ["Which pipe material is best?", "That depends on local code, water conditions, location, and budget."],
@@ -164,10 +164,10 @@
     {
       slug: "bathroom-plumbing",
       title: "Bathroom Plumbing",
-      eyebrow: "Fixture & Remodel Support",
-      short: "Support for toilets, sinks, showers, tubs, faucets, fixture upgrades, and bathroom projects.",
+      eyebrow: "When bathroom fixtures start acting up",
+      short: "For bathroom fixtures that leak, run, clog, need replacing, or need plumbing during a remodel.",
       intro:
-        "Bathroom plumbing services help repair everyday fixture problems and coordinate upgrades during remodels or replacements.",
+        "Bathroom plumbing covers the daily annoyances and the planned upgrades: running toilets, dripping faucets, shower valves, sink drains, tub issues, and remodel plumbing.",
       image: "../img/generated/bathroom-plumbing.webp",
       cardImage: "img/generated/bathroom-plumbing.webp",
       included: [
@@ -185,7 +185,7 @@
         "Test operation and review care instructions"
       ],
       details:
-        "Bathroom projects may require matching fixtures, shutoff valves, drain alignment, waterproofing coordination, and code-aware installation.",
+        "Fixture swaps can reveal old shutoff valves, mismatched drains, or water-damaged cabinets. For remodels, include whether walls or floors are already open.",
       faqs: [
         ["Can providers install customer-purchased fixtures?", "Many can, but they may need to verify compatibility first."],
         ["Do bathroom remodels require permits?", "Permit requirements vary by location and project scope."],
@@ -194,6 +194,70 @@
       related: ["drain-cleaning", "leak-detection", "water-heater-service"]
     }
   ];
+
+  const serviceDetails = {
+    "drain-cleaning": {
+      supportImage: "../img/generated/service-drain-detail.webp",
+      supportAlt: "Plumber clearing a kitchen sink drain under a cabinet",
+      overview: [
+        "Drain cleaning work starts with the symptoms: which fixture is slow, whether water backs up elsewhere, and how often the problem returns. That context helps separate a simple trap blockage from a deeper line issue.",
+        "The service can include sink, shower, tub, floor, laundry, and utility drain clearing. If the same line keeps blocking, the provider may recommend a camera inspection, cleanout access review, or a maintenance plan for grease, roots, or buildup."
+      ],
+      serviceScope: ["Fixture drain clearing", "Cleanout access review", "Recurring clog assessment", "Post-service drainage testing"],
+      prepare: ["List every affected fixture", "Mention sewer odors or gurgling", "Clear access below sinks or near cleanouts"]
+    },
+    "leak-detection": {
+      supportImage: "../img/generated/service-leak-detail.webp",
+      supportAlt: "Plumber tracing moisture near exposed residential pipes",
+      overview: [
+        "Leak detection is about narrowing the source before repairs become invasive. Stains, soft flooring, meter movement, pressure loss, and running-water sounds can all point to different parts of the system.",
+        "A provider may inspect visible fixtures, supply lines, valves, walls, floors, and meter behavior before recommending a repair path. For hidden or slab leaks, more specialized detection may be needed before opening surfaces."
+      ],
+      serviceScope: ["Moisture symptom review", "Fixture and valve checks", "Pressure and meter behavior review", "Repair-scope recommendation"],
+      prepare: ["Take photos of stains or damp areas", "Note when the symptom appears", "Check whether the meter moves when fixtures are off"]
+    },
+    "water-heater-service": {
+      supportImage: "../img/generated/service-water-heater-detail.webp",
+      supportAlt: "Plumber explaining water heater service to a homeowner",
+      overview: [
+        "Water heater service can be maintenance, troubleshooting, repair, or replacement planning. The right approach depends on tank age, fuel type, symptoms, access, venting, valves, and whether water is actively leaking.",
+        "Typical visits may include checking temperature problems, leaks, noises, pressure relief valves, sediment buildup, expansion tanks, and installation conditions. Replacement planning should cover capacity, code needs, disposal, and connection updates."
+      ],
+      serviceScope: ["No-hot-water diagnostics", "Tank and valve inspection", "Maintenance and flushing guidance", "Replacement planning"],
+      prepare: ["Share tank size, age, and fuel type", "Mention rust-colored water or noises", "Keep the area around the heater accessible"]
+    },
+    "emergency-plumbing": {
+      supportImage: "../img/generated/service-emergency-detail.webp",
+      supportAlt: "Plumber responding to an active residential pipe leak",
+      overview: [
+        "Emergency plumbing focuses on stopping immediate damage and making the property usable again. Active leaks, sewer backups, overflowing fixtures, failed shutoffs, and burst pipes need clear location and urgency details.",
+        "The first visit may be stabilization rather than the full permanent repair. Once the water is controlled, the provider can explain what caused the issue, what needs replacement, and whether follow-up work is required."
+      ],
+      serviceScope: ["Urgent leak response", "Backup and overflow support", "Temporary stabilization", "Follow-up repair planning"],
+      prepare: ["Shut off water if safe", "Avoid electrical areas near water", "Share photos and the exact affected room"]
+    },
+    "pipe-repair": {
+      supportImage: "../img/generated/service-pipe-detail.webp",
+      supportAlt: "Plumber measuring a replacement pipe section in an open wall",
+      overview: [
+        "Pipe repair may involve a small exposed fix, a section replacement, or a broader upgrade when corrosion and repeat leaks are present. Access, material, pipe age, and pressure behavior all influence the final scope.",
+        "Good pipe work should include a clear explanation of the material being used, how much wall or cabinet access is needed, what gets tested afterward, and what restoration or follow-up is outside the plumbing scope."
+      ],
+      serviceScope: ["Visible pipe leak repair", "Section replacement", "Material and access planning", "Pressure and valve review"],
+      prepare: ["Identify pipe material if known", "Mention previous leaks nearby", "Clear cabinets, crawlspace access, or wall areas"]
+    },
+    "bathroom-plumbing": {
+      supportImage: "../img/generated/service-bathroom-detail.webp",
+      supportAlt: "Plumber working below a bathroom vanity while a homeowner stands nearby",
+      overview: [
+        "Bathroom plumbing covers the fixtures people use every day: toilets, faucets, shower valves, tubs, vanity drains, shutoff valves, and remodel connections. Small symptoms often point to worn parts or aging connections.",
+        "For fixture replacement or remodel work, the provider may need to confirm compatibility, valve condition, drain alignment, wall access, and whether the existing plumbing meets the new layout or fixture requirements."
+      ],
+      serviceScope: ["Toilet and faucet support", "Shower and tub plumbing", "Vanity drain and supply work", "Remodel rough-in planning"],
+      prepare: ["Share fixture model if replacing", "Mention running toilets or dripping sounds", "Confirm whether walls or floors are already open"]
+    }
+  };
+
   const $ = (selector, scope = document) => scope.querySelector(selector);
   const $$ = (selector, scope = document) => Array.from(scope.querySelectorAll(selector));
 
@@ -221,6 +285,7 @@
     setText("[data-phone-text]", config.phoneDisplay);
     setText("[data-phone-label]", config.phoneButtonLabel);
     setText("[data-email-text]", config.email);
+    setText("[data-privacy-email-text]", config.privacyEmail || config.email);
     setText("[data-email-label]", config.emailButtonLabel || "Email us");
     setText("[data-website-text]", config.website);
     setText("[data-address-text]", [config.addressLine1, config.addressLine2].filter(Boolean).join(", "));
@@ -238,6 +303,7 @@
     setText("[data-footer-company-line]", `${config.companyName} - ${config.addressLine1}, ${config.addressLine2} - ${config.companyId}`);
     setHref("[data-phone-link]", `tel:${config.phone}`);
     setHref("[data-email-link]", `mailto:${config.email}`);
+    setHref("[data-privacy-email-link]", `mailto:${config.privacyEmail || config.email}`);
     setHref("[data-website-link]", `https://${config.website}`);
 
     if (document.title.includes("{{companyName}}")) {
@@ -311,8 +377,8 @@
     footer.innerHTML = `
       <section class="newsletter reveal">
         <div>
-          <h2>Smart Plumbing Tips Delivered</h2>
-          <p>Get plumbing tips, maintenance updates, and service reminders directly in your inbox.</p>
+          <h2>Keep a short plumbing checklist handy</h2>
+          <p>Simple notes on leaks, drains, heaters, and when a small issue should not wait.</p>
         </div>
         <form class="newsletter-form">
           <label class="sr-only" for="newsletter-email">Email address</label>
@@ -354,17 +420,19 @@
           <a href="${root}cookie-policy.html">Cookie Policy</a>
         </div>
       </div>
-      <p class="footer-disclaimer" data-footer-disclaimer>${config.footerDisclaimer}</p>
       <div class="footer-bottom">
         <span data-copyright-line>${config.copyrightLine}</span>
         <span data-footer-text-secondary>${config.footerTextSecondary}</span>
       </div>
+      <p class="footer-disclaimer" data-footer-disclaimer>${config.footerDisclaimer}</p>
     `;
   }
 
   function buildServiceCards() {
     $$(".services-grid[data-services-grid]").forEach((grid) => {
+      const limit = Number(grid.dataset.limit || services.length);
       grid.innerHTML = services
+        .slice(0, limit)
         .map(
           (service) => `
           <a class="service-card reveal" href="${serviceUrl(service)}">
@@ -400,6 +468,7 @@
     if (!page) return;
     const slug = document.body.dataset.serviceSlug;
     const service = serviceBySlug.get(slug) || services[0];
+    const detail = serviceDetails[service.slug];
     const related = service.related.map((item) => serviceBySlug.get(item)).filter(Boolean);
 
     document.title = `${service.title} | ${config.companyName}`;
@@ -423,20 +492,37 @@
           <a class="button button-primary" href="../contact.html">Book Appointment</a>
         </div>
       </aside>
-      <article class="service-main">
-        <img class="detail-image reveal" src="${service.image}" alt="${service.title}">
-        <div class="reveal">
-          <p class="eyebrow">${service.eyebrow}</p>
-          <h1>${service.title}</h1>
-          <p class="lead">${service.intro}</p>
-        </div>
-        <section class="detail-section reveal">
-          <h2>What This Service Includes</h2>
-          ${list(service.included)}
-        </section>
-        <section class="feature-grid reveal">
-          ${service.options
-            .map((option) => `<div class="feature-card"><i data-lucide="badge-check"></i><h3>${option}</h3><p>Matched to the property condition, project scope, and provider availability.</p></div>`)
+        <article class="service-main">
+          <img class="detail-image reveal" src="${service.image}" alt="${service.title}">
+          <div class="reveal">
+            <p class="eyebrow">${service.eyebrow}</p>
+            <h1>${service.title}</h1>
+            <p class="lead">${service.intro}</p>
+          </div>
+          <section class="service-story reveal">
+            <div>
+              <h2>What Customers Usually Need To Know</h2>
+              ${detail.overview.map((paragraph) => `<p>${paragraph}</p>`).join("")}
+            </div>
+            <img src="${detail.supportImage}" alt="${detail.supportAlt}">
+          </section>
+          <section class="detail-section reveal">
+            <h2>What This Service Includes</h2>
+            ${list(service.included)}
+          </section>
+          <section class="service-info-grid reveal">
+            <div>
+              <h2>Service Scope</h2>
+              ${list(detail.serviceScope)}
+            </div>
+            <div>
+              <h2>Before The Visit</h2>
+              ${list(detail.prepare)}
+            </div>
+          </section>
+          <section class="feature-grid reveal">
+            ${service.options
+            .map((option) => `<div class="feature-card"><i data-lucide="badge-check"></i><h3>${option}</h3><p>Ask the provider what this includes, when it is needed, and whether it fits your property.</p></div>`)
             .join("")}
         </section>
         <section class="detail-section reveal">
@@ -446,7 +532,7 @@
         <section class="process-list reveal">
           <h2>How The Process Works</h2>
           ${service.process
-            .map((step, index) => `<div><strong>${String(index + 1).padStart(2, "0")}</strong><span>${step}</span></div>`)
+            .map((step, index) => `<div style="--process-bg: url('${detail.supportImage}')"><strong>${String(index + 1).padStart(2, "0")}</strong><span>${step}</span></div>`)
             .join("")}
         </section>
         <section class="detail-section reveal">
@@ -472,10 +558,10 @@
   function buildFaqs() {
     $$("[data-faqs]").forEach((target) => {
       target.innerHTML = [
-        faqItem("How quickly can a provider respond?", "Response time depends on service type, location, urgency, and local provider availability."),
-        faqItem("Are the providers employed by this site?", "No. Providers are independent. This site helps connect customers with local service options."),
-        faqItem("Can I request a specific service?", "Yes. Select the service on the contact form and include project details so the request can be routed properly."),
-        faqItem("Is pricing guaranteed?", "No. Estimates, fees, and service terms are set by independent providers.")
+        faqItem("What should I include in a request?", "Describe the fixture or pipe involved, when the issue started, whether water is active, and how urgent it feels."),
+        faqItem("Are providers employed by this website?", "No. Providers are independent. Customers should confirm credentials, pricing, and scope directly before hiring."),
+        faqItem("What if I choose the wrong service?", "That is okay. The written details matter more than the perfect category."),
+        faqItem("Can pricing be guaranteed here?", "No. Pricing, availability, and terms come from the independent provider after reviewing the job.")
       ].join("");
     });
   }
@@ -522,6 +608,191 @@
         form.reset();
       });
     });
+  }
+
+  function bindProcessSwitcher() {
+    const image = $("#process-image");
+    const title = $("#process-title");
+    const text = $("#process-text");
+    const link = $("#process-link");
+    const steps = $$(".process-step");
+    if (!image || !title || !text || !steps.length) return;
+
+    const items = [
+      {
+        image: "img/generated/process-book-left.webp",
+        alt: "Homeowner booking plumbing service while plumber reviews sink area",
+        title: "Simple And Efficient Plumbing Service Process",
+        text:
+          "Start with the basics: what is wrong, where it is happening, and how urgent it feels. The clearer the request, the easier the next call becomes.",
+        link: "contact.html",
+        background: "img/generated/process-book-bg.webp"
+      },
+      {
+        image: "img/generated/process-inspection-left.webp",
+        alt: "Plumber inspecting pipes for a hidden leak",
+        title: "Inspection Starts With The Clues You Already Have",
+        text:
+          "Water marks, sounds, pressure changes, smells, and repeated clogs all help narrow the issue before anyone opens a wall or replaces parts.",
+        link: "services/leak-detection.html",
+        background: "img/generated/process-inspection-bg.webp"
+      },
+      {
+        image: "img/generated/process-repair-left.webp",
+        alt: "Plumber repairing a section of copper pipe",
+        title: "Repairs And Installations Need The Right Scope",
+        text:
+          "Some jobs need a small repair. Others need replacement planning, material choices, access notes, and a clear conversation about what is included.",
+        link: "services/pipe-repair.html",
+        background: "img/generated/process-repair-bg.webp"
+      },
+      {
+        image: "img/generated/process-final-left.webp",
+        alt: "Plumber testing water flow after completed bathroom plumbing work",
+        title: "Final Checks Help Prevent Repeat Problems",
+        text:
+          "Before the work is approved, ask how the system was tested, what changed, what to watch, and when maintenance should happen next.",
+        link: "services/water-heater-service.html",
+        background: "img/generated/process-final-bg.webp"
+      }
+    ];
+
+    function activate(index) {
+      const item = items[index] || items[0];
+      const copy = image.closest(".process-copy");
+      const current = steps.findIndex((step) => step.classList.contains("active"));
+      const initialized = steps.every((step) => step.style.getPropertyValue("--step-bg"));
+      if (current === index && initialized) return;
+      const updateContent = () => {
+        image.src = item.image;
+        image.alt = item.alt;
+        title.textContent = item.title;
+        text.textContent = item.text;
+        if (link) link.href = item.link;
+      };
+      if (initialized) {
+        copy?.classList.add("is-switching");
+        window.setTimeout(() => {
+          updateContent();
+          window.requestAnimationFrame(() => copy?.classList.remove("is-switching"));
+        }, 160);
+      } else {
+        updateContent();
+        window.requestAnimationFrame(() => copy?.classList.remove("is-switching"));
+      }
+      steps.forEach((step, stepIndex) => {
+        const active = stepIndex === index;
+        step.classList.toggle("active", active);
+        step.setAttribute("aria-pressed", String(active));
+        step.style.setProperty("--step-bg", `url("${items[stepIndex].background}")`);
+      });
+    }
+
+    steps.forEach((step, index) => {
+      step.addEventListener("click", () => activate(index));
+    });
+    activate(0);
+  }
+
+  function bindTestimonials() {
+    const image = $("#testimonial-image");
+    const card = $("#testimonial-card");
+    const stars = $("#testimonial-stars");
+    const text = $("#testimonial-text");
+    const name = $("#testimonial-name");
+    const role = $("#testimonial-role");
+    const prev = $("[data-testimonial-prev]");
+    const next = $("[data-testimonial-next]");
+    if (!image || !card || !text || !name) return;
+
+    const reviews = [
+      {
+        name: "Michael C.",
+        role: "Homeowner",
+        image: "img/generated/testimonial-01.webp",
+        alt: "Satisfied homeowner speaking with a plumber",
+        text: "Hidran responded quickly to our emergency plumbing issue and helped us understand what details to ask about before approving the repair."
+      },
+      {
+        name: "Avery L.",
+        role: "Property Manager",
+        image: "img/generated/testimonial-02.webp",
+        alt: "Service coordinator taking a plumbing request",
+        text: "The intake was simple. I could explain the leak, share the urgency, and get the request organized without repeating the same details several times."
+      },
+      {
+        name: "Jordan R.",
+        role: "Restaurant Owner",
+        image: "img/generated/testimonial-03.webp",
+        alt: "Kitchen drain being inspected",
+        text: "Our kitchen drain problem needed fast attention. The drain page helped us describe the issue clearly before the callback."
+      },
+      {
+        name: "Nina P.",
+        role: "Homeowner",
+        image: "img/generated/testimonial-04.webp",
+        alt: "Plumber inspecting pipes for a leak",
+        text: "The leak was hidden behind a utility wall. The request form helped us list the symptoms before anyone started opening things up."
+      },
+      {
+        name: "Thomas W.",
+        role: "Condo Owner",
+        image: "img/generated/testimonial-05.webp",
+        alt: "Plumber testing a bathroom faucet",
+        text: "After the faucet repair, we knew what was tested and what to watch for. That final explanation made the whole visit feel more complete."
+      },
+      {
+        name: "Sara M.",
+        role: "Office Manager",
+        image: "img/generated/testimonial-06.webp",
+        alt: "Plumber servicing a water heater",
+        text: "Our water heater issue was not obvious at first. Hidran helped us turn a vague no-hot-water complaint into a clearer service request."
+      },
+      {
+        name: "Daniel G.",
+        role: "Homeowner",
+        image: "img/generated/testimonial-07.webp",
+        alt: "Plumber replacing a damaged pipe section",
+        text: "The pipe repair needed more than a quick patch. The service details made it easier to ask about access, materials, and the real scope."
+      }
+    ];
+
+    let index = 0;
+    let timer;
+
+    function render(nextIndex) {
+      index = (nextIndex + reviews.length) % reviews.length;
+      const review = reviews[index];
+      card.classList.add("is-switching");
+      image.classList.add("is-switching");
+      window.setTimeout(() => {
+        image.src = review.image;
+        image.alt = review.alt;
+        stars.textContent = "★★★★★";
+        text.textContent = review.text;
+        name.textContent = review.name;
+        role.textContent = review.role;
+        window.requestAnimationFrame(() => {
+          card.classList.remove("is-switching");
+          image.classList.remove("is-switching");
+        });
+      }, 180);
+    }
+
+    function restart() {
+      window.clearInterval(timer);
+      timer = window.setInterval(() => render(index + 1), 5200);
+    }
+
+    prev?.addEventListener("click", () => {
+      render(index - 1);
+      restart();
+    });
+    next?.addEventListener("click", () => {
+      render(index + 1);
+      restart();
+    });
+    restart();
   }
 
   function animateOnScroll() {
@@ -583,6 +854,8 @@
   buildServicePage();
   buildFaqs();
   bindInteractions();
+  bindProcessSwitcher();
+  bindTestimonials();
   cookieBanner();
   animateOnScroll();
   initIcons();

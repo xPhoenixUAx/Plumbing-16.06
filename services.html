@@ -16,26 +16,89 @@
   <main>
     <section class="page-hero">
       <div class="container reveal">
-        <p class="eyebrow"><i data-lucide="home"></i> Home / Services</p>
+        <p class="eyebrow"><i data-lucide="home"></i> Find the closest match</p>
         <h1>Services</h1>
-        <p class="lead">A complete plumbing service directory for urgent repairs, diagnostics, system work, and everyday fixture needs.</p>
+        <p class="lead">Choose the page that sounds closest to the problem. Each one gives enough detail to start a better request.</p>
       </div>
     </section>
-    <section class="section">
+
+    <section class="section services-page-section">
       <div class="container">
-        <div class="section-title reveal">
-          <p class="eyebrow">Our Plumbing Solutions</p>
-          <h2>Reliable Plumbing Services For Every Property</h2>
-          <p>Choose a service to review what is included, when it is useful, how the process works, and what customers should confirm with local providers.</p>
+        <div class="section-title services-page-title reveal">
+          <p class="eyebrow"><i data-lucide="blocks"></i> Our Plumbing Solutions</p>
+          <h1>Reliable Plumbing Services For Every Property</h1>
+          <p>Hidran provides fast, professional, and dependable plumbing solutions designed for modern homes, apartments, offices, and commercial spaces.</p>
         </div>
-        <div class="services-grid" data-services-grid></div>
+        <div class="services-grid services-page-grid" data-services-grid></div>
+        <p class="services-link-line reveal">Fast, Professional & Emergency Plumbing Solutions <a href="contact.html">Book Appointment</a></p>
       </div>
     </section>
-    <section class="section section-dark">
+
+    <section class="quality-section services-quality-section">
+      <div class="container">
+        <div class="section-title quality-title reveal">
+          <p class="eyebrow"><i data-lucide="blocks"></i> Why Choose Us</p>
+          <h2>Delivering Quality Plumbing Services Without Delays</h2>
+        </div>
+        <div class="quality-grid">
+          <div class="quality-copy reveal">
+            <p>Hidran helps customers send clearer plumbing requests with useful details for urgent repairs, common diagnostics, and planned service work.</p>
+            <div class="progress-list">
+              <div class="progress-item reveal" data-progress="98"><span>Emergency Plumbing <b>98%</b></span><i></i></div>
+              <div class="progress-item reveal" data-progress="95"><span>Drain Cleaning <b>95%</b></span><i></i></div>
+              <div class="progress-item reveal" data-progress="92"><span>Pipe Repair Solutions <b>92%</b></span><i></i></div>
+            </div>
+          </div>
+          <div class="counter-grid reveal">
+            <div><strong data-count="15" data-suffix="+">0+</strong><span>Industry Certifications</span></div>
+            <div><strong data-count="700" data-suffix="+">0+</strong><span>Projects Completed</span></div>
+            <div><strong data-count="98" data-suffix="%">0%</strong><span>Satisfied Clients</span></div>
+            <div><strong data-count="25" data-suffix="+">0+</strong><span>Expert Plumbers</span></div>
+          </div>
+        </div>
+        <div class="quality-features reveal">
+          <div><i data-lucide="users"></i><h3>Licensed Plumbing Experts</h3><p>Certified and experienced plumbers delivering safe, professional, and high-quality plumbing solutions.</p></div>
+          <div class="active"><i data-lucide="award"></i><h3>Quality Workmanship Guarantee</h3><p>We focus on durable repairs and long-lasting plumbing systems built for everyday reliability.</p></div>
+          <div><i data-lucide="shield-check"></i><h3>Customer Satisfaction Guaranteed</h3><p>We focus on reliable service, clean workmanship, and long-term customer trust on every job.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft process-switcher-section services-process-section">
+      <div class="container process-switcher">
+        <div class="process-copy reveal">
+          <img id="process-image" src="img/generated/process-book-left.webp" alt="Homeowner booking plumbing service while plumber reviews sink area">
+          <p class="eyebrow"><i data-lucide="blocks"></i> Our Process</p>
+          <h2 id="process-title">Simple And Efficient Plumbing Service Process</h2>
+          <p id="process-text">Start with the basics: what is wrong, where it is happening, and how urgent it feels. The clearer the request, the easier the next call becomes.</p>
+          <a id="process-link" class="button button-primary" href="contact.html">Contact Us</a>
+        </div>
+        <div class="process-steps reveal" aria-label="Plumbing service process">
+          <button class="process-step active" type="button" data-process-step="0">
+            <strong>01</strong>
+            <span><b>Book Your Service</b><small>Send the request online or contact the intake desk for immediate assistance.</small></span>
+          </button>
+          <button class="process-step" type="button" data-process-step="1">
+            <strong>02</strong>
+            <span><b>Inspection & Diagnosis</b><small>The issue is reviewed so the right type of plumbing help can be identified.</small></span>
+          </button>
+          <button class="process-step" type="button" data-process-step="2">
+            <strong>03</strong>
+            <span><b>Repair & Installation</b><small>Repair, replacement, or installation details are matched to the property and scope.</small></span>
+          </button>
+          <button class="process-step" type="button" data-process-step="3">
+            <strong>04</strong>
+            <span><b>Final Testing & Support</b><small>Confirm the work, ask about follow-up care, and keep useful notes for next time.</small></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-image-section">
       <div class="container cta-band reveal">
         <h2>Need Emergency Plumbing Help?</h2>
-        <p>Call now or submit the contact form to start a service request.</p>
-        <a class="button button-primary" data-phone-link href="tel:+1801234567"><span data-phone-label>Call 24/7</span></a>
+        <p>Our expert plumbers are available day and night for urgent repairs, leak fixes, and plumbing emergencies.</p>
+        <a class="cta-call-pill" data-phone-link href="tel:+1801234567"><i data-lucide="phone-call"></i><span><strong>Call Us Now</strong><small data-phone-text></small></span></a>
       </div>
     </section>
   </main>
