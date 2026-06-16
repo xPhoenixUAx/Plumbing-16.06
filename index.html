@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | {{companyName}}</title>
+  <meta name="description" content="Complete-cycle plumbing service coordination for homes, apartments, offices, and commercial properties.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bundle.css?v=2026061601">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <p class="eyebrow"><i data-lucide="wrench"></i> Complete Plumbing Support</p>
+          <h1>Smart Plumbing Services Built For Modern Living</h1>
+          <p class="lead">From emergencies and leak detection to water heaters, drain cleaning, and bathroom plumbing, <span data-company-name>Hidran</span> helps customers connect with reliable local providers for the full cycle of plumbing needs.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="contact.html" data-cta-primary>Request Service</a>
+            <a class="button button-secondary" href="services.html" data-cta-secondary>Explore Services</a>
+          </div>
+          <div class="hero-bullets">
+            <span><i data-lucide="check-circle-2"></i> Licensed and insured provider matching</span>
+            <span><i data-lucide="check-circle-2"></i> Same-day and emergency request routing</span>
+            <span><i data-lucide="check-circle-2"></i> Residential and commercial plumbing support</span>
+          </div>
+        </div>
+        <aside class="quote-card reveal">
+          <h2>Request A Free Plumbing Quote</h2>
+          <p data-disclaimer-short>Free service that helps customers connect with independent local plumbing providers.</p>
+          <form class="form-grid">
+            <label class="sr-only" for="home-name">Name</label>
+            <input id="home-name" type="text" placeholder="Full Name" required>
+            <label class="sr-only" for="home-phone">Phone</label>
+            <input id="home-phone" type="tel" placeholder="Phone Number" required>
+            <label class="sr-only" for="home-service">Service</label>
+            <select id="home-service" data-service-select required></select>
+            <button class="button button-primary" type="submit">Get Free Quote</button>
+          </form>
+          <div class="success-message" hidden></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Our Plumbing Solutions</p>
+          <h2>Reliable Plumbing Services For Every Property</h2>
+          <p>Service coverage across urgent repairs, diagnostics, system upgrades, and everyday fixture support.</p>
+        </div>
+        <div class="services-grid" data-services-grid></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split-grid">
+        <div class="reveal">
+          <p class="eyebrow">About Us</p>
+          <h2>Modern Plumbing Services Built On Trust And Expertise</h2>
+          <p><span data-company-name>Hidran</span> is designed to make plumbing service discovery easier. Customers can describe the issue once, review relevant service paths, and connect with local providers who handle the actual work.</p>
+          <div class="feature-grid">
+            <div class="feature-card"><i data-lucide="shield-check"></i><h3>Full-Cycle Service Range</h3><p>Emergency response, diagnostics, repairs, installation, maintenance, and upgrade support.</p></div>
+            <div class="feature-card"><i data-lucide="clock-3"></i><h3>Fast Request Routing</h3><p>Clear forms and phone CTAs help urgent requests move quickly.</p></div>
+          </div>
+        </div>
+        <div class="image-stack reveal">
+          <img src="img/generated/about-plumber.webp" alt="Professional plumber reviewing a home plumbing checklist">
+          <div class="stat-badge"><strong data-count="20" data-suffix="+">0+</strong><span>Service Categories</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container stats-grid">
+        <div class="reveal">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2>Delivering Quality Plumbing Services Without Delays</h2>
+          <p class="lead">The site is structured to support the complete customer journey: understand the service, submit details, connect with providers, and plan follow-up repairs or upgrades.</p>
+          <div class="progress-list">
+            <div class="progress-item reveal" data-progress="98"><span>Emergency Plumbing <b>98%</b></span><i></i></div>
+            <div class="progress-item reveal" data-progress="95"><span>Drain Cleaning <b>95%</b></span><i></i></div>
+            <div class="progress-item reveal" data-progress="92"><span>Pipe Repair Solutions <b>92%</b></span><i></i></div>
+          </div>
+        </div>
+        <div class="counter-grid reveal">
+          <div><strong data-count="15" data-suffix="+">0+</strong><span>Service Types</span></div>
+          <div><strong data-count="700" data-suffix="+">0+</strong><span>Requests Routed</span></div>
+          <div><strong data-count="98" data-suffix="%">0%</strong><span>Clear Intake Rate</span></div>
+          <div><strong data-count="25" data-suffix="+">0+</strong><span>Local Provider Areas</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container process-grid">
+        <div class="image-stack reveal">
+          <img src="img/generated/process-plumber.webp" alt="Plumber inspecting pipes below a kitchen sink">
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Our Process</p>
+          <h2>Simple And Efficient Plumbing Service Process</h2>
+          <div class="process-list">
+            <div><strong>01</strong><span>Choose the service and describe the plumbing problem.</span></div>
+            <div><strong>02</strong><span>Submit contact details so the request can be reviewed.</span></div>
+            <div><strong>03</strong><span>Connect with available independent local providers.</span></div>
+            <div><strong>04</strong><span>Review scope, pricing, credentials, and schedule the work.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container testimonial">
+        <div class="image-stack reveal">
+          <img src="img/generated/testimonial-customer.webp" alt="Satisfied customer speaking with a plumber after a completed repair">
+        </div>
+        <div class="testimonial-quote reveal">
+          <p class="eyebrow">Customer Feedback</p>
+          <h2>Real Reviews From Satisfied Customers</h2>
+          <p>"The service pages made it easy to understand what kind of plumbing help I needed before submitting a request. The process felt clear and fast."</p>
+          <strong>Michael Carter</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Meet Our Experts</p>
+          <h2>Experienced Plumbing Professionals Ready To Help</h2>
+          <p>Service requests can cover urgent repairs, planned upgrades, diagnostics, and routine maintenance.</p>
+        </div>
+        <div class="split-grid">
+          <div class="image-stack reveal">
+            <img src="img/generated/team-plumbers.webp" alt="Experienced plumbing professionals in clean work uniforms">
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card reveal"><i data-lucide="badge-check"></i><h3>Licensed Plumbing Experts</h3><p>Customers can ask providers to verify licensing, insurance, and credentials before work begins.</p></div>
+            <div class="feature-card reveal"><i data-lucide="timer"></i><h3>Emergency Coordination</h3><p>Urgent plumbing issues can be routed based on location, service type, and provider availability.</p></div>
+            <div class="feature-card reveal"><i data-lucide="clipboard-list"></i><h3>Clear Service Details</h3><p>Every service page explains included work, fit, process, important details, and FAQs.</p></div>
+            <div class="feature-card reveal"><i data-lucide="messages-square"></i><h3>Human Support Flow</h3><p>Forms and contact paths collect enough context to support the next step.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark cta-image-section">
+      <div class="container cta-band reveal">
+        <h2>Need Emergency Plumbing Help?</h2>
+        <p>Call directly or send a request so the issue can be reviewed quickly.</p>
+        <a class="button button-primary" data-phone-link href="tel:+1801234567"><i data-lucide="phone-call"></i><span data-phone-text></span></a>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">Our Blog</p>
+          <h2>Latest Plumbing Tips And Service Insights</h2>
+          <p>Helpful maintenance topics for customers comparing service options.</p>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card reveal"><img src="img/generated/blog-drain.webp" alt="Kitchen drain inspection"><div><h3>How To Prevent Kitchen Drain Clogs</h3><p>Simple habits that can reduce grease buildup and recurring slow drains.</p><a href="services/drain-cleaning.html">Read More</a></div></article>
+          <article class="blog-card reveal"><img src="img/generated/blog-pressure.webp" alt="Water pressure test at bathroom faucet"><div><h3>Warning Signs Of Water Pressure Problems</h3><p>Low or inconsistent pressure can point to leaks, valves, or pipe issues.</p><a href="services/leak-detection.html">Read More</a></div></article>
+          <article class="blog-card reveal"><img src="img/generated/blog-water-heater.webp" alt="Water heater maintenance service"><div><h3>When Water Heater Maintenance Matters</h3><p>Flushing, valve checks, and age review can help avoid cold-water surprises.</p><a href="services/water-heater-service.html">Read More</a></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <p class="eyebrow">FAQs</p>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="faq-list" data-faqs></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <a class="floating-cta" data-phone-link href="tel:+1801234567" aria-label="Call now"><i data-lucide="phone-call"></i></a>
+  <div id="cookie-banner" class="cookie-banner" hidden>
+    <strong>Cookie preferences</strong>
+    <span>This site uses essential and analytics cookies to improve the experience. Read our <a href="cookie-policy.html">Cookie Policy</a>.</span>
+    <div class="cookie-actions">
+      <button class="button button-primary" data-cookie-action="accepted" type="button">Accept</button>
+      <button class="button button-secondary" data-cookie-action="declined" type="button">Decline</button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/site-config.js?v=2026061601"></script>
+  <script src="js/main.js?v=2026061601"></script>
+</body>
+</html>

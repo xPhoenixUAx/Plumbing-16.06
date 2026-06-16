@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | {{companyName}}</title>
+  <meta name="description" content="Contact us to request plumbing service information or submit a project inquiry.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/bundle.css?v=2026061601">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+  <main>
+    <section class="page-hero">
+      <div class="container reveal">
+        <p class="eyebrow"><i data-lucide="home"></i> Home / Contact</p>
+        <h1>Contact</h1>
+        <p class="lead">Submit your plumbing request, call directly, or use the contact details below.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container contact-layout">
+        <aside class="contact-card reveal">
+          <h2>Contact Information</h2>
+          <img class="contact-photo" src="img/generated/customer-service.webp" alt="Service coordinator taking a plumbing request by phone">
+          <div class="contact-methods">
+            <a data-phone-link href="tel:+1801234567"><i data-lucide="phone-call"></i><span><strong data-phone-label>Call 24/7</strong><br><span data-phone-text></span></span></a>
+            <a data-email-link href="#"><i data-lucide="mail"></i><span><strong>Email</strong><br><span data-email-text></span></span></a>
+            <a data-website-link href="#"><i data-lucide="globe"></i><span><strong>Website</strong><br><span data-website-text></span></span></a>
+            <p><i data-lucide="map-pin"></i><span><strong>Address</strong><br><span data-address-text></span></span></p>
+            <p><i data-lucide="clock"></i><span><strong>Hours</strong><br><span data-business-hours></span></span></p>
+          </div>
+        </aside>
+        <section class="contact-card reveal">
+          <h2>Request Plumbing Service</h2>
+          <p data-disclaimer-short></p>
+          <form class="form-grid">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" type="text" placeholder="Full Name" required>
+            <label for="contact-email">Email</label>
+            <input id="contact-email" type="email" placeholder="Email Address" required>
+            <label for="contact-phone">Phone</label>
+            <input id="contact-phone" type="tel" placeholder="Phone Number" required>
+            <label for="contact-service">Service</label>
+            <select id="contact-service" data-service-select required></select>
+            <label for="contact-message">Message</label>
+            <textarea id="contact-message" placeholder="Tell us what is happening, where the issue is, and how urgent it is." required></textarea>
+            <button class="button button-primary" type="submit">Submit Request</button>
+          </form>
+          <div id="form-success" class="success-message" hidden></div>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer id="site-footer" class="site-footer"></footer>
+  <a class="floating-cta" data-phone-link href="tel:+1801234567" aria-label="Call now"><i data-lucide="phone-call"></i></a>
+  <div id="cookie-banner" class="cookie-banner" hidden><strong>Cookie preferences</strong><span>This site uses essential and analytics cookies. Read our <a href="cookie-policy.html">Cookie Policy</a>.</span><div class="cookie-actions"><button class="button button-primary" data-cookie-action="accepted" type="button">Accept</button><button class="button button-secondary" data-cookie-action="declined" type="button">Decline</button></div></div>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="js/site-config.js?v=2026061601"></script>
+  <script src="js/main.js?v=2026061601"></script>
+</body>
+</html>
