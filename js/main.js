@@ -376,6 +376,11 @@
         <a class="${currentPage === "contact.html" ? "is-active" : ""}" href="${root}contact.html">Contact</a>
       </div>
     `;
+
+    const mobilePanel = $(".mobile-panel", header);
+    if (mobilePanel) {
+      document.body.appendChild(mobilePanel);
+    }
   }
 
   function buildFooter() {
@@ -600,6 +605,18 @@
   }
 
   function bindInteractions() {
+    const header = $("#site-header");
+    if (header) {
+      const updateHeaderState = () => {
+        header.classList.toggle("is-scrolled", window.scrollY > 40);
+      };
+      updateHeaderState();
+      window.requestAnimationFrame(updateHeaderState);
+      window.addEventListener("scroll", updateHeaderState, { passive: true });
+      window.addEventListener("resize", updateHeaderState);
+      window.addEventListener("load", updateHeaderState);
+    }
+
     const menuToggle = $(".menu-toggle");
     const mobilePanel = $(".mobile-panel");
     if (menuToggle && mobilePanel) {
