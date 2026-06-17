@@ -727,7 +727,7 @@
         text:
           "Start with the basics: what is wrong, where it is happening, and how urgent it feels. The clearer the request, the easier the next call becomes.",
         link: "contact.html",
-        background: "img/generated/process-book-bg.webp"
+        background: "/img/generated/process-book-bg.webp"
       },
       {
         image: "img/generated/process-inspection-left.webp",
@@ -736,7 +736,7 @@
         text:
           "Water marks, sounds, pressure changes, smells, and repeated clogs all help narrow the issue before anyone opens a wall or replaces parts.",
         link: "services/leak-detection.html",
-        background: "img/generated/process-inspection-bg.webp"
+        background: "/img/generated/process-inspection-bg.webp"
       },
       {
         image: "img/generated/process-repair-left.webp",
@@ -745,7 +745,7 @@
         text:
           "Some jobs need a small repair. Others need replacement planning, material choices, access notes, and a clear conversation about what is included.",
         link: "services/pipe-repair.html",
-        background: "img/generated/process-repair-bg.webp"
+        background: "/img/generated/process-repair-bg.webp"
       },
       {
         image: "img/generated/process-final-left.webp",
@@ -754,7 +754,7 @@
         text:
           "Before the work is approved, ask how the system was tested, what changed, what to watch, and when maintenance should happen next.",
         link: "services/water-heater-service.html",
-        background: "img/generated/process-final-bg.webp"
+        background: "/img/generated/process-final-bg.webp"
       }
     ];
 
@@ -869,7 +869,7 @@
       window.setTimeout(() => {
         image.src = review.image;
         image.alt = review.alt;
-        stars.textContent = "★★★★★";
+        stars.textContent = "\u2605\u2605\u2605\u2605\u2605";
         text.textContent = review.text;
         name.textContent = review.name;
         role.textContent = review.role;
