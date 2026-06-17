@@ -269,6 +269,11 @@ textarea {
   padding: 126px 0 66px;
 }
 
+.legal-hero {
+  min-height: 190px;
+  padding: 96px 0 30px;
+}
+
 .hero-main::before,
 .page-hero::before {
   content: "";
@@ -1924,6 +1929,20 @@ p {
   max-width: 900px;
 }
 
+.legal-section {
+  padding: 26px 0 72px;
+}
+
+.legal-content.reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
 .legal-content h2 {
   margin-top: 34px;
 }
@@ -2238,6 +2257,45 @@ p {
     grid-template-columns: 1fr;
   }
 
+  .process-switcher {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: min(720px, calc(100% - 32px));
+  }
+
+  .process-copy img {
+    aspect-ratio: 16 / 9;
+    margin-bottom: 20px;
+  }
+
+  .process-copy h2,
+  .process-copy p:not(.eyebrow) {
+    max-width: 560px;
+  }
+
+  .process-copy .button {
+    display: flex;
+    justify-self: center;
+    width: max-content;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .process-step {
+    min-height: 88px;
+    padding: 15px 16px 15px 68px;
+  }
+
+  .process-step strong {
+    width: 54px;
+    height: 42px;
+  }
+
+  #testimonial-image {
+    transform: none;
+  }
+
   .cta-image-section {
     background-attachment: scroll;
   }
@@ -2361,6 +2419,15 @@ p {
     padding: 112px 0 50px;
   }
 
+  .legal-hero {
+    min-height: 170px;
+    padding: 86px 0 24px;
+  }
+
+  .legal-section {
+    padding-top: 22px;
+  }
+
   .service-layout {
     grid-template-columns: 1fr;
   }
@@ -2479,12 +2546,15 @@ p {
   }
 
   .process-switcher {
-    gap: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: min(430px, calc(100% - 28px));
   }
 
   .process-copy img {
-    aspect-ratio: 16 / 10;
-    margin-bottom: 18px;
+    aspect-ratio: 4 / 3;
+    margin-bottom: 14px;
     border-radius: 10px;
     box-shadow: 0 14px 34px rgba(7, 29, 53, 0.14);
   }
@@ -2496,10 +2566,10 @@ p {
   }
 
   .process-copy h2 {
-    max-width: 340px;
+    max-width: 330px;
     margin: 0 auto 10px;
     text-align: center;
-    font-size: clamp(28px, 8vw, 34px);
+    font-size: clamp(27px, 7.4vw, 32px);
     line-height: 1.08;
   }
 
@@ -2518,19 +2588,19 @@ p {
   }
 
   .process-steps {
-    gap: 10px;
+    gap: 9px;
   }
 
   .process-step {
-    min-height: 84px;
-    padding: 14px 14px 14px 66px;
+    min-height: auto;
+    padding: 12px 12px 12px 58px;
     border-radius: 10px;
   }
 
   .process-step strong {
-    width: 52px;
-    height: 42px;
-    font-size: 18px;
+    width: 46px;
+    height: 38px;
+    font-size: 17px;
   }
 
   .process-step b {
