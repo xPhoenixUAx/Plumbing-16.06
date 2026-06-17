@@ -37,7 +37,7 @@
         <section class="contact-card reveal">
           <h2>Describe the plumbing issue</h2>
           <p data-disclaimer-short></p>
-          <form class="form-grid">
+          <form class="form-grid" data-success-modal>
             <label for="contact-name">Name</label>
             <input id="contact-name" type="text" placeholder="Full Name" required>
             <label for="contact-email">Email</label>
@@ -50,11 +50,23 @@
             <textarea id="contact-message" placeholder="Example: kitchen sink backs up after a few minutes, no standing water now, apartment on the second floor." required></textarea>
             <button class="button button-primary" type="submit">Submit Request</button>
           </form>
-          <div id="form-success" class="success-message" hidden></div>
         </section>
       </div>
     </section>
   </main>
+  <div id="success-modal" class="success-modal" hidden role="dialog" aria-modal="true" aria-labelledby="success-modal-title">
+    <div class="success-modal-card">
+      <button class="success-modal-close" type="button" aria-label="Close confirmation"><i data-lucide="x"></i></button>
+      <span class="success-modal-icon"><i data-lucide="check"></i></span>
+      <p class="eyebrow">Request received</p>
+      <h2 id="success-modal-title"></h2>
+      <p id="success-modal-text"></p>
+      <div class="success-modal-actions">
+        <a class="button button-primary" data-phone-link href="tel:+1801234567"><i data-lucide="phone-call"></i><span data-phone-label>Call us</span></a>
+        <button class="button button-secondary success-modal-close" type="button">Close</button>
+      </div>
+    </div>
+  </div>
   <footer id="site-footer" class="site-footer"></footer>
   <a class="floating-cta" data-phone-link href="tel:+1801234567" aria-label="Call now"><i data-lucide="phone-call"></i></a>
   <div id="cookie-banner" class="cookie-banner" hidden><strong>Cookie preferences</strong><span>This site uses essential and analytics cookies. Read our <a href="cookie-policy.html">Cookie Policy</a>.</span><div class="cookie-actions"><button class="button button-primary" data-cookie-action="accepted" type="button">Accept</button><button class="button button-secondary" data-cookie-action="declined" type="button">Decline</button></div></div>

@@ -324,14 +324,21 @@
 
     const depth = document.body.dataset.depth === "inner";
     const root = depth ? "../" : "";
+    const currentPage = location.pathname.split("/").pop() || "index.html";
+    const isServicePage = depth || currentPage === "services.html";
+    const isLegalPage = ["privacy.html", "terms.html", "cookie-policy.html"].includes(currentPage);
     const servicesLinks = services
       .map((service) => `<a href="${root}services/${service.slug}.html">${service.title}<span>${service.eyebrow}</span></a>`)
       .join("");
+    const pagesLinks = `
+      <a href="${root}privacy.html">Privacy Policy</a>
+      <a href="${root}terms.html">Terms & Conditions</a>
+      <a href="${root}cookie-policy.html">Cookie Policy</a>
+    `;
 
     header.innerHTML = `
       <a class="brand" href="${root}index.html" aria-label="Home">
-        <span class="brand-mark" data-logo-initial>${config.logoInitial || "H"}</span>
-        <span data-logo-text>${config.logoText || config.companyName}</span>
+        ${brandMarkup()}
       </a>
       <div class="header-control-bar">
         <nav class="nav-shell" aria-label="Main navigation">
@@ -356,14 +363,17 @@
         <i data-lucide="menu"></i>
       </button>
       <div class="mobile-panel" hidden>
-        <div class="mobile-brand"><span class="brand-mark" data-logo-initial>${config.logoInitial || "H"}</span><span data-logo-text>${config.logoText || config.companyName}</span></div>
-        <a href="${root}index.html">Home</a>
-        <button class="mobile-services" type="button" aria-expanded="false">Services <i data-lucide="chevron-down"></i></button>
-        <div class="mobile-services-list" hidden>${servicesLinks}</div>
-        <a href="${root}about.html">About</a>
-        <a href="${root}contact.html">Contact</a>
-        <a class="button button-primary" href="${root}contact.html" data-cta-primary>${config.ctaPrimary}</a>
-        <a class="mobile-contact" data-email-link href="mailto:${config.email}" data-email-text>${config.email}</a>
+        <div class="mobile-panel-head">
+          <div class="mobile-brand">${brandMarkup()}</div>
+          <button class="mobile-close" type="button" aria-label="Close menu"><i data-lucide="x"></i></button>
+        </div>
+        <a class="${currentPage === "index.html" ? "is-active" : ""}" href="${root}index.html">Home</a>
+        <a class="${currentPage === "about.html" ? "is-active" : ""}" href="${root}about.html">About</a>
+        <button class="mobile-services ${isServicePage ? "is-active" : ""}" type="button" aria-expanded="false">Services <i data-lucide="plus"></i></button>
+        <div class="mobile-services-list" hidden><a href="${root}services.html">All Services</a>${servicesLinks}</div>
+        <button class="mobile-pages ${isLegalPage ? "is-active" : ""}" type="button" aria-expanded="false">Pages <i data-lucide="plus"></i></button>
+        <div class="mobile-pages-list" hidden>${pagesLinks}</div>
+        <a class="${currentPage === "contact.html" ? "is-active" : ""}" href="${root}contact.html">Contact</a>
       </div>
     `;
   }
@@ -389,8 +399,7 @@
       <div class="footer-grid">
         <div>
           <a class="brand brand-footer" href="${root}index.html">
-            <span class="brand-mark" data-logo-initial>${config.logoInitial || "H"}</span>
-            <span data-logo-text>${config.logoText || config.companyName}</span>
+            ${brandMarkup()}
           </a>
           <p data-footer-text-primary>${config.footerTextPrimary}</p>
           <p class="footer-small" data-footer-company-line></p>
@@ -425,6 +434,29 @@
         <span data-footer-text-secondary>${config.footerTextSecondary}</span>
       </div>
       <p class="footer-disclaimer" data-footer-disclaimer>${config.footerDisclaimer}</p>
+    `;
+  }
+
+  function brandMarkup() {
+    const text = config.logoText || config.companyName || "ClearFlow";
+    const match = text.match(/^([A-Z]?[a-z]+)([A-Z].*)$/);
+    const first = match ? match[1] : text.split(/\s+/)[0] || text;
+    const second = match ? match[2] : text.slice(first.length).trim();
+    return `
+      <span class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 48 48" focusable="false">
+          <path class="brand-icon-pipe" d="M15 14h17c4.4 0 8 3.6 8 8v2" />
+          <path class="brand-icon-pipe" d="M15 9v10" />
+          <path class="brand-icon-pipe" d="M8 9h14" />
+          <path class="brand-icon-pipe" d="M11 19h8" />
+          <path class="brand-icon-pipe" d="M36 24h8" />
+          <path class="brand-icon-pipe" d="M40 24v5" />
+          <path class="brand-icon-drop" d="M40 32c2.2 2.7 3.4 4.8 3.4 6.4a3.4 3.4 0 0 1-6.8 0c0-1.6 1.2-3.7 3.4-6.4Z" />
+        </svg>
+      </span>
+      <span class="brand-wordmark" aria-label="${text}">
+        <span class="brand-main">${first}</span>${second ? `<span class="brand-accent">${second}</span>` : ""}
+      </span>
     `;
   }
 
@@ -571,23 +603,44 @@
     const menuToggle = $(".menu-toggle");
     const mobilePanel = $(".mobile-panel");
     if (menuToggle && mobilePanel) {
+      const closeButton = $(".mobile-close", mobilePanel);
+      const openMenu = () => {
+        menuToggle.setAttribute("aria-expanded", "true");
+        mobilePanel.hidden = false;
+        document.body.classList.add("menu-open");
+        requestAnimationFrame(() => mobilePanel.classList.add("is-open"));
+      };
+      const closeMenu = () => {
+        menuToggle.setAttribute("aria-expanded", "false");
+        mobilePanel.classList.remove("is-open");
+        document.body.classList.remove("menu-open");
+        window.setTimeout(() => {
+          if (menuToggle.getAttribute("aria-expanded") === "false") mobilePanel.hidden = true;
+        }, 280);
+      };
       menuToggle.addEventListener("click", () => {
         const open = menuToggle.getAttribute("aria-expanded") === "true";
-        menuToggle.setAttribute("aria-expanded", String(!open));
-        mobilePanel.hidden = open;
-        document.body.classList.toggle("menu-open", !open);
+        open ? closeMenu() : openMenu();
+      });
+      closeButton?.addEventListener("click", closeMenu);
+      mobilePanel.addEventListener("click", (event) => {
+        if (event.target.closest("a")) closeMenu();
+      });
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && menuToggle.getAttribute("aria-expanded") === "true") closeMenu();
       });
     }
 
-    const mobileServices = $(".mobile-services");
-    const mobileServicesList = $(".mobile-services-list");
-    if (mobileServices && mobileServicesList) {
-      mobileServices.addEventListener("click", () => {
-        const open = mobileServices.getAttribute("aria-expanded") === "true";
-        mobileServices.setAttribute("aria-expanded", String(!open));
-        mobileServicesList.hidden = open;
+    [[".mobile-services", ".mobile-services-list"], [".mobile-pages", ".mobile-pages-list"]].forEach(([buttonSelector, listSelector]) => {
+      const trigger = $(buttonSelector);
+      const list = $(listSelector);
+      if (!trigger || !list) return;
+      trigger.addEventListener("click", () => {
+        const open = trigger.getAttribute("aria-expanded") === "true";
+        trigger.setAttribute("aria-expanded", String(!open));
+        list.hidden = open;
       });
-    }
+    });
 
     document.addEventListener("click", (event) => {
       const button = event.target.closest(".faq-item button");
@@ -601,6 +654,11 @@
     $$("form").forEach((form) => {
       form.addEventListener("submit", (event) => {
         event.preventDefault();
+        if (form.matches("[data-success-modal]")) {
+          openSuccessModal();
+          form.reset();
+          return;
+        }
         const message = $(".success-message", form.parentElement) || $("#form-success");
         if (message) {
           message.innerHTML = `<strong>${config.formSuccessTitle}</strong><span>Thanks for contacting ${config.companyName}. A coordinator will review your request and follow up from ${config.email}.</span>`;
@@ -608,6 +666,48 @@
         }
         form.reset();
       });
+    });
+
+    bindSuccessModal();
+  }
+
+  function openSuccessModal() {
+    const modal = $("#success-modal");
+    if (!modal) return;
+    const title = $("#success-modal-title", modal);
+    const text = $("#success-modal-text", modal);
+    if (title) title.textContent = config.formSuccessTitle || "Request submitted";
+    if (text) {
+      text.textContent = `Thanks for contacting ${config.companyName}. A coordinator will review your request and follow up from ${config.email}.`;
+    }
+    modal.hidden = false;
+    document.documentElement.classList.add("modal-open");
+    document.body.classList.add("modal-open");
+    requestAnimationFrame(() => modal.classList.add("is-open"));
+  }
+
+  function closeSuccessModal() {
+    const modal = $("#success-modal");
+    if (!modal) return;
+    modal.classList.remove("is-open");
+    document.documentElement.classList.remove("modal-open");
+    document.body.classList.remove("modal-open");
+    window.setTimeout(() => {
+      if (!modal.classList.contains("is-open")) modal.hidden = true;
+    }, 220);
+  }
+
+  function bindSuccessModal() {
+    const modal = $("#success-modal");
+    if (!modal) return;
+    $$(".success-modal-close", modal).forEach((button) => {
+      button.addEventListener("click", closeSuccessModal);
+    });
+    modal.addEventListener("click", (event) => {
+      if (event.target === modal) closeSuccessModal();
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !modal.hidden) closeSuccessModal();
     });
   }
 
