@@ -711,7 +711,7 @@
         role: "Homeowner",
         image: "img/generated/testimonial-01.webp",
         alt: "Satisfied homeowner speaking with a plumber",
-        text: "Hidran responded quickly to our emergency plumbing issue and helped us understand what details to ask about before approving the repair."
+        text: `${config.companyName} responded quickly to our emergency plumbing issue and helped us understand what details to ask about before approving the repair.`
       },
       {
         name: "Avery L.",
@@ -746,7 +746,7 @@
         role: "Office Manager",
         image: "img/generated/testimonial-06.webp",
         alt: "Plumber servicing a water heater",
-        text: "Our water heater issue was not obvious at first. Hidran helped us turn a vague no-hot-water complaint into a clearer service request."
+        text: `Our water heater issue was not obvious at first. ${config.companyName} helped us turn a vague no-hot-water complaint into a clearer service request.`
       },
       {
         name: "Daniel G.",
