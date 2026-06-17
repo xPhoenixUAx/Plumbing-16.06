@@ -17,7 +17,6 @@
 }
 
 html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -25,7 +24,6 @@ body {
   width: 100%;
   max-width: 100vw;
   margin: 0;
-  overflow-x: hidden;
   color: var(--ink);
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: var(--white);
@@ -1736,10 +1734,9 @@ p {
   align-self: start;
   position: sticky;
   top: 112px;
-  max-height: calc(100vh - 132px);
-  overflow-y: auto;
-  padding-right: 4px;
-  scrollbar-width: thin;
+  max-height: none;
+  overflow: visible;
+  padding-right: 0;
 }
 
 .side-card a:not(.button) {
@@ -1804,16 +1801,67 @@ p {
 
 .service-info-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  grid-template-columns: 1fr;
+  gap: 14px;
   margin-top: 30px;
 }
 
 .service-info-grid > div {
-  padding: 24px;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.34fr) 1fr;
+  gap: 22px;
+  align-items: start;
+  padding: 22px 24px;
   background: var(--soft);
   border: 1px solid var(--line);
   border-radius: var(--radius);
+}
+
+.service-info-grid h2 {
+  margin: 0;
+}
+
+.service-info-grid .check-list {
+  margin: 0;
+}
+
+.service-options-strip {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.32fr) 1fr;
+  gap: 22px;
+  align-items: start;
+  margin-top: 30px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.service-options-strip h2 {
+  margin: 0;
+}
+
+.service-options-strip > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.service-options-strip span {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 12px;
+  color: var(--ink);
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.service-options-strip svg {
+  width: 18px;
+  height: 18px;
+  color: var(--blue);
 }
 
 .check-list {
@@ -1832,6 +1880,27 @@ p {
 .check-list svg {
   flex: 0 0 auto;
   color: var(--blue);
+}
+
+@media (max-width: 900px) {
+  .service-info-grid > div,
+  .service-options-strip {
+    grid-template-columns: minmax(130px, 0.34fr) 1fr;
+  }
+
+  .service-info-grid .check-list {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .service-info-grid > div {
+    padding: 22px;
+  }
+
+  .service-info-grid h2,
+  .service-options-strip h2 {
+    font-size: clamp(24px, 6vw, 32px);
+  }
 }
 
 .related-services div {
@@ -2182,11 +2251,44 @@ p {
     justify-self: start;
   }
 
+  .service-layout {
+    grid-template-columns: minmax(230px, 0.72fr) minmax(0, 1.28fr);
+  }
+
   .service-sidebar {
-    position: static;
+    position: sticky;
+    top: 92px;
     max-height: none;
     overflow: visible;
+    gap: 12px;
     padding-right: 0;
+  }
+
+  .service-sidebar .side-card {
+    padding: 16px;
+  }
+
+  .service-sidebar .side-card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .service-sidebar .side-card p {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .service-sidebar .side-card a:not(.button) {
+    margin-top: 7px;
+    padding: 9px 11px;
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .service-sidebar .side-card .button {
+    min-height: 40px;
+    padding: 10px 14px;
+    font-size: 14px;
   }
 
   .hero-main {
@@ -2220,6 +2322,11 @@ p {
 }
 
 @media (max-width: 640px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .site-header {
     width: min(100% - 28px, 1120px);
     gap: 8px;
@@ -2252,6 +2359,17 @@ p {
   .page-hero {
     min-height: 260px;
     padding: 112px 0 50px;
+  }
+
+  .service-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .service-sidebar {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    padding-right: 0;
   }
 
   .container {
@@ -2468,6 +2586,31 @@ p {
 
   .services-page-grid .service-card {
     min-height: 300px;
+  }
+
+  .service-info-grid > div {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px;
+  }
+
+  .service-info-grid h2 {
+    font-size: 30px;
+  }
+
+  .service-info-grid .check-list li {
+    align-items: flex-start;
+    line-height: 1.35;
+  }
+
+  .service-options-strip {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 18px 0;
+  }
+
+  .service-options-strip span {
+    width: 100%;
   }
 
   .stat-badge {

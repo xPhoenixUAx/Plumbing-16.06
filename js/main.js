@@ -520,11 +520,12 @@
               ${list(detail.prepare)}
             </div>
           </section>
-          <section class="feature-grid reveal">
-            ${service.options
-            .map((option) => `<div class="feature-card"><i data-lucide="badge-check"></i><h3>${option}</h3><p>Ask the provider what this includes, when it is needed, and whether it fits your property.</p></div>`)
-            .join("")}
-        </section>
+          <section class="service-options-strip reveal">
+            <h2>Common Request Types</h2>
+            <div>
+              ${service.options.map((option) => `<span><i data-lucide="badge-check"></i>${option}</span>`).join("")}
+            </div>
+          </section>
         <section class="detail-section reveal">
           <h2>When It Is A Good Fit</h2>
           ${list(service.bestFor)}
